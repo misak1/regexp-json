@@ -8,5 +8,5 @@
 ## After
 
 ```
-これはサンプルです!!
+INSERT INTO table_name VALUES('これはテストです');
 ```
