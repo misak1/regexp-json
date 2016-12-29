@@ -1,0 +1,4 @@
+// jsonのような記述で、シングルクォートで括ることも、json内にコメントを書くことも可能です。
+{
+   "INSERT文に置換"    :{"mg": ['^(.*)$',"INSERT INTO table_name VALUES('$1');"]}
+}
