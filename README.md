@@ -1,19 +1,21 @@
 # regexp.json
 
-- このリポジトリはREEの設定ファイルを管理するためのリポジトリです。
+- このリポジトリは[REE](https://github.com/misak1/electron-regexp-editor)の設定ファイルを管理するためのリポジトリです。
 
 こんな設定作って欲しいなどありましたらissueなどから追加依頼してください。  
-フィードバックまでお時間をいただくことがあります。
+また、フィードバックまでお時間をいただくことがあります。
 
 ### ＼＼＼＼＼　プルリク大歓迎　／／／／／
 
-設定ファイルの構成は下記のようになっています。
+設定ファイルは次の構成になっています。
 
 ```
 ├── README.md
 └── カテゴリ/
     └── 処理内容/
         ├── README.md
-        └── regexp.json ←設定ファイル
+        └── regexp.json
 ```
 
+
+REE [https://github.com/misak1/electron-regexp-editor](https://github.com/misak1/electron-regexp-editor)
