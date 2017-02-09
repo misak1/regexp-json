@@ -2,6 +2,6 @@
 {
   "/終わりだとディレクトリ以下になるのでファイル指定にする"    :{"mg": ['^(.*)/$',"$1index.html"]},
   "パラメータ作成"    :{"mg": ['^(.*)$',"&paths_region[]=$1"]},
-  "文章全体を関数化"         :{"m": ['((.*\n*.*)*)','pushd /Users/m-shibata/vhosts/nomuraHD/dist-nomuraHD; php .px_execute.php "/nothing/to/publish/?PX=publish.run$1"; popd;']},
+  "文章全体を関数化"         :{"m": ['((.*\n*.*)*)','php .px_execute.php "/nothing/to/publish/?PX=publish.run$1"']},
   "改行削除"         :{"mg": ['(\r\n|\r|\n)','']},
 }
