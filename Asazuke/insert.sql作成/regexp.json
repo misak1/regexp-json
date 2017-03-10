@@ -1,6 +1,6 @@
 // jsonのような記述で、シングルクォートで括ることも、json内にコメントを書くことも可能です。
 {
-  "INSERT文に置換"    :{"mg": ['^(.*)$',"INSERT INTO table_name VALUES('$1');"]}
+  "INSERT文に置換"    :{"mg": ['^(.*)$',"INSERT INTO t_asazukeSS (fullPath) VALUES('$1');"]}
 
    ,"文章全体を関数化"         :{"m": ['((.*\n*.*)*)','-- 元データ削除\nDELETE FROM t_asazukeSS;\ncommit;\n\n-- データ投入\n$1\n\n-- 適当な値を補完する\nUPDATE t_asazukeSS SET checkCount = 1, status=\'HTTP/1.1 200 OK\', statusCode=200;\n\n-- 忘れずに\ncommit;\n']}
 }
